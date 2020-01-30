@@ -25,6 +25,7 @@ namespace okta_aspnet_mvc_example
             app.UseOktaMvc(new OktaMvcOptions()
             {
                 OktaDomain = ConfigurationManager.AppSettings["okta:OktaDomain"],
+                AuthorizationServerId = ConfigurationManager.AppSettings["okta:AuthorizationServerId"],
                 ClientId = ConfigurationManager.AppSettings["okta:ClientId"],
                 ClientSecret = ConfigurationManager.AppSettings["okta:ClientSecret"],
                 RedirectUri = ConfigurationManager.AppSettings["okta:RedirectUri"],
