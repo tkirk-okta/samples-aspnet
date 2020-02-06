@@ -51,6 +51,8 @@ namespace okta_aspnet_mvc_example
                 RedirectUri = ConfigurationManager.AppSettings["okta:RedirectUri"],
                 PostLogoutRedirectUri = ConfigurationManager.AppSettings["okta:PostLogoutRedirectUri"],
                 Scope = "openid profile email",
+                ResponseType = "code",
+                ResponseMode = "query",
                 // https://github.com/IdentityServer/IdentityServer4.Demo/blob/master/src/IdentityServer4Demo/Config.cs
                 //ClientId = "server.hybrid",
                 //ClientSecret = "secret", // for code flow
